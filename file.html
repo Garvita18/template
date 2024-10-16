@@ -225,32 +225,70 @@
     </section>
 
     <section id="fullscreen-section"
-        style="position: relative;width: 80%; height: 100vh; overflow: hidden; text-align: center;margin-left: 200px;">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQueVQsRFwBZ9rxh1BOZKsZt0XyahqAoitgQg&s"
-            alt="Full Screen Background"
-            style="width: 99%; height: 70%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: -1;">
+    style="position: relative; width: 80%; height: 100vh; overflow: hidden; text-align: center; margin: 0 auto;">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQueVQsRFwBZ9rxh1BOZKsZt0XyahqAoitgQg&s"
+        alt="Full Screen Background"
+        style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: -1;">
 
-        <div
-            style="position: absolute; top: 0; left: 0; width: 99%; height: 70%; background-color: rgba(0, 0, 0, 0.5); z-index: 0;">
-        </div>
+    <div
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 0;">
+    </div>
 
-        <div
-            style="position: relative; z-index: 1; color: white; padding: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;margin-top: -100px;">
-            <!-- Pause Icon -->
-            <img src="https://cdn-icons-png.flaticon.com/512/4340/4340129.png" alt="Pause Icon"
-                style="width: 80px; height: 80px; margin-bottom: 20px;">
+    <div
+        style="position: relative; z-index: 1; color: white; padding: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+        <!-- Pause Icon -->
+        <img src="https://cdn-icons-png.flaticon.com/512/4340/4340129.png" alt="Pause Icon"
+            style="width: 80px; height: 80px; margin-bottom: 20px;">
 
-            <div style="font-size: 60px; font-weight: bold; margin-top: 20px;">Call to Action</div>
-            <p style="font-size: 20px; margin: 20px 0;">This is a descriptive paragraph providing more details about the
-                section.</p>
+        <div style="font-size: 4vw; font-weight: bold; margin-top: 20px;">Call to Action</div>
+        <p style="font-size: 1.5vw; margin: 20px 0; text-align: center;">This is a descriptive paragraph providing more details about
+            the section.</p>
 
-            <button
-                style="padding: 10px 20px; font-size: 18px; border: 2px solid white; border-radius: 5px; background-color: transparent; color: white; cursor: pointer;">
-                Call to Action
-            </button>
+        <button
+            style="padding: 10px 20px; font-size: 1.5vw; border: 2px solid white; border-radius: 5px; background-color: transparent; color: white; cursor: pointer;">
+            Call to Action
+        </button>
 
-        </div>
-    </section>
+    </div>
+</section>
+
+<!-- Media Queries for smaller screens -->
+<style>
+    @media (max-width: 768px) {
+        #fullscreen-section {
+            width: 100%;
+            height: 70vh;
+        }
+        #fullscreen-section img {
+            height: 100%;
+        }
+        #fullscreen-section div {
+            font-size: 6vw;
+        }
+        #fullscreen-section p {
+            font-size: 3vw;
+        }
+        #fullscreen-section button {
+            font-size: 3vw;
+        }
+    }
+
+    @media (max-width: 480px) {
+        #fullscreen-section {
+            height: 60vh;
+        }
+        #fullscreen-section div {
+            font-size: 8vw;
+        }
+        #fullscreen-section p {
+            font-size: 4vw;
+        }
+        #fullscreen-section button {
+            font-size: 4vw;
+        }
+    }
+</style>
+
 
                  
     
