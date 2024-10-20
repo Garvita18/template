@@ -1,0 +1,1891 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website Layout</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> <!-- Your custom CSS file -->
+    
+</head>
+
+<body>
+    <!-- Contact Bar -->
+    <div class="p-2 d-flex justify-content-between align-items-center" style="background-color: #258568; font-size: 0.9rem; color: white;">
+        <span>contact@example.com</span>
+        <div class="text-end">
+            <link rel="stylesheet"
+                  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+            <a href="https://twitter.com" class="text-light me-2" target="_blank"><i
+                    class="fab fa-twitter fa-lg"></i></a>
+            <a href="https://facebook.com" class="text-light me-2" target="_blank"><i
+                    class="fab fa-facebook fa-lg"></i></a>
+            <a href="https://instagram.com" class="text-light me-2" target="_blank"><i
+                    class="fab fa-instagram fa-lg"></i></a>
+            <a href="https://linkedin.com" class="text-light" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+        </div>
+    </div>
+    
+   <!-- Navbar -->
+<nav class="navbar navbar-expand-lg" style="background-color: #258568;">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link me-4" href="#Home" style="color: white;">Home</a></li>
+                <li class="nav-item"><a class="nav-link me-4" href="#About" style="color: white;">About</a></li>
+                <li class="nav-item"><a class="nav-link me-4" href="#Portfolio" style="color: white;">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link me-4" href="#team" style="color: white;">Team</a></li>
+                <li class="nav-item"><a class="nav-link me-4" href="#Blog" style="color: white;">Blog</a></li>
+                <li class="nav-item"><a class="nav-link me-4" href="#Drop Down" style="color: white;">Drop Down</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact" style="color: white;">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<style>
+    /* Hover effect for nav links */
+    .nav-link {
+        color: white;
+        transition: color 0.3s ease, background-color 0.3s ease;
+    }
+
+    /* On hover, slightly darken the color */
+    .nav-link:hover {
+        color: #145750; /* Darker shade of the original background color */
+        background-color: #1b655f; /* Slightly darker shade of the navbar background */
+        border-radius: 5px; /* Optional: rounded corners for the hover effect */
+    }
+</style>
+
+    
+    <section style="background-color: #258568; color: white; text-align: center; padding: 50px 0;">
+    <div class="container">
+        <div class="row align-items-center justify-content-center" style="margin-bottom: 10rem;">
+            <!-- Left Side (Text and Buttons) -->
+            <div class="col-lg-6 col-md-12 mb-4 text-center text-lg-start">
+                <h1 class="fw-bold" style="font-size: 3rem;">Welcome to Impact</h1>
+                <p class="lead" style="font-size: 1.2rem;">Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p>
+                <div class="mt-4">
+                    <!-- Get Started Button -->
+<a href="#" class="btn btn-light btn-lg me-3 get-started-btn" style="background-color: #258568; color: white; font-weight: bold; border-radius: 25px;">Get Started</a>
+
+<!-- Watch Video Button -->
+<a href="#" class="btn btn-lg watch-video-btn" style="font-weight: bold; color: white; background-color: transparent; border: none;">
+    <i class="fas fa-play-circle me-2"></i> Watch Video
+</a>
+
+<style>
+    /* Get Started Button Hover Effect */
+    .get-started-btn {
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .get-started-btn:hover {
+        background-color: #258568; /* Darker green shade on hover */
+        color: #ffffff; /* Ensures white text remains on hover */
+    }
+
+    /* Watch Video Button Hover Effect */
+    .watch-video-btn {
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
+    .watch-video-btn:hover {
+        color: #d3d3d3; /* Light gray color on hover */
+        transform: scale(1.05); /* Slightly enlarge the button on hover */
+    }
+
+    /* Icon hover effect inside the Watch Video button */
+    .watch-video-btn i:hover {
+        color: #d3d3d3; /* Ensures icon color also changes */
+    }
+</style>
+
+                    
+                </div>
+            </div>
+
+            <!-- Right Side (Illustration) -->
+            <div class="col-lg-6 col-md-12 text-center mt-4 mt-lg-0">
+                <img src="office-removebg-preview.png" 
+                     alt="Teamwork Illustration" class="img-fluid" 
+                     style="width: 50%; margin-top: -20px;">
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<!-- Cards Section with Overlap -->
+<div class="container-cards" style="position: relative; z-index: 10;">
+    <div class="row d-flex justify-content-center align-items-center" style="position: relative; top: -120px;margin-right: 0; "> <!-- Flexbox and gap for spacing -->
+        <div class="col-lg-2 col-md-6 col-sm-12 mb-4 d-flex justify-content-center">
+            <div class="card d-flex flex-column justify-content-center align-items-center p-4" style="background-color: #2f856b; color: white; text-align: center; height: 250px; width: 250px;">
+                <i class="fa-solid fa-laptop" style="font-size: 50px;"></i>
+                <p class="mt-3 " style="font-size: 1.2rem;">Lorem Ipsum</p>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-12 mb-4 d-flex justify-content-center">
+            <div class="card d-flex flex-column justify-content-center align-items-center p-4" style="background-color: #258568; color: white; text-align: center; height: 250px; width: 250px;">
+                <i class="fa-solid fa-diamond" style="font-size: 50px;"></i>
+                <p class="mt-3 " style="font-size: 1.2rem;">Sed ut Perspiciatis</p>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-12 mb-4 d-flex justify-content-center">
+            <div class="card d-flex flex-column justify-content-center align-items-center p-4" style="background-color: #258568; color: white; text-align: center; height: 250px; width: 250px;">
+                <i class="fa-solid fa-location-dot" style="font-size: 50px;"></i>
+                <p class="mt-3 " style="font-size: 1.2rem;">Magni Dolores</p>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-12 mb-4 d-flex justify-content-center">
+            <div class="card d-flex flex-column justify-content-center align-items-center p-4" style="background-color: #258568; color: white; text-align: center; height: 250px; width: 250px;">
+                <i class="fa-solid fa-network-wired" style="font-size: 50px;"></i>
+                <p class="mt-3 " style="font-size: 1.2rem;">Nemo Enim</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Media Queries for Responsiveness -->
+<style>
+    @media (max-width: 991px) { /* For tablets and below */
+        .container-card h1 {
+            font-size: 2.5rem;
+        }
+        .container-card.lead {
+            font-size: 1rem;
+        }
+        .container-card.row.justify-content-center {
+            top: -70px; /* Adjust the overlap for smaller screens */
+        }
+        .container-card.card {
+            height: 220px; /* Reduce card height */
+        }
+        .container-card.card p {
+            font-size: 1rem; /* Adjust font size for card text */
+        }
+    }
+
+    @media (max-width: 768px) { /* For small tablets and large phones */
+        .container-card h1{
+            font-size: 2rem;
+        }
+        .container-card.lead {
+            font-size: 0.9rem;
+        }
+        .container-card.row.justify-content-center {
+            top: -50px; /* Adjust the overlap for smaller screens */
+        }
+        .container-card.card {
+            height: 200px; /* Reduce card height */
+        }
+        .container-card.card p {
+            font-size: 0.9rem; /* Adjust font size for card text */
+        }
+        .container-card {
+            margin-top: 20px; /* Adjust image margin to avoid overlap with buttons */
+        }
+    }
+
+    @media (max-width: 576px) { /* For phones */
+        .container-card h1{
+            font-size: 1.8rem;
+        }
+        .container-card.lead {
+            font-size: 0.8rem;
+        }
+        .container-card.row.justify-content-center {
+            top: -30px; /* Adjust the overlap for smaller screens */
+        }
+        .container-card.card {
+            height: 180px; /* Reduce card height */
+        }
+        .container-card.card p {
+            font-size: 0.8rem; /* Adjust font size for card text */
+        }
+        .container-card.col-lg-3, .col-md-6 { /* Make cards full-width on small screens */
+            width: 100%;
+        }
+        .container-card img {
+            margin-top: 40px; /* Increase margin-top to avoid overlap */
+        }
+    }
+</style>
+
+    
+
+
+<!-- </body> -->
+
+<!-- </html> -->
+
+    <!-- About Us Section -->
+   <!-- About Us Section -->
+   <!-- <section id="about" class="py-5" style="margin-top: -70px;">
+    <div class="container">
+        <h2 style="text-align: center;">About Us</h2>
+        <div style="width: 50px; height: 2px; background-color: green; margin: 3px auto 0;"></div>
+        <p class="text-center">Learn more about who we are and what we do.</p>
+        
+        <div class="row align-items-center justify-content-center"> -->
+            <!-- Left column: Image and description -->
+            <!-- <div class="col-md-6 col-sm-12 mb-4">
+                <h4 class="fw-bold text-center">Our diverse skills and shared vision allow us to tackle challenges effectively and drive success in project</h4>
+                <img src="https://static8.depositphotos.com/1309509/1035/i/450/depositphotos_10358393-Workplace-with-mobile-phone-paper-pen-and-clips-on-work-table..jpg"
+                    alt="Teamwork" class="img-fluid my-3 d-block mx-auto" style="max-width: 100%; min-width: 250px;padding-top: 20px;">
+                <p class="text-center">Beatae voluptatem pariatur eveniet, officiis optio ad, esse modi earum sed, rerum ab incidunt
+                    laudantium expedita reprehenderit. Unde dolores similique at, labore sapiente minima ex iusto sint?
+                    Praesentium, eveniet.</p>
+                <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste distinctio molestiae architecto. Beatae
+                    voluptatem pariatur eveniet, officiis optio ad, esse modi earum sed, rerum ab incidunt laudantium
+                    Necessitatibus, magnam fugiat! Quod porro voluptate modi autem.</p>
+            </div> -->
+
+            <!-- Right column: Bullet points and image -->
+            <!-- <div class="col-md-6 col-sm-12">
+                <p class="text-center">Lorem ipsum, dolor sit amet consectetur amet consectetur adipisicing elit. Veritatis officiis culpa dolorem sunt vitae laudantium, assumenda magni fuga quis cum porro autem mollitia accusantium. Hic quis at esse asperiores, autem obcaecati
+                    dignissimos</p>
+                <ul class="mt-3" style="list-style-type: none; padding: 0;">
+                    <li class="d-flex align-items-center justify-content-center mb-2">
+                        <i class="fa-regular fa-circle-check text-success me-2"></i> <!-- Added me-2 for space between icon and text -->
+                        <!-- <span>Effective communication among team members an team aj hjbs jdn.</span>
+                    </li>
+                    <li class="d-flex align-items-center justify-content-center mb-2">
+                        <i class="fa-regular fa-circle-check text-success me-2"></i>
+                        <span>Innovative solutions driven by diverse perspectives amet lorem st jf.</span>
+                    </li>
+                    <li class="d-flex align-items-center justify-content-center mb-2">
+                        <i class="fa-regular fa-circle-check text-success me-2"></i>
+                        <span>Strong support and encouragement within am the team ghj kit nom.</span>
+                    </li>
+                </ul>
+                <img src="https://media.licdn.com/dms/image/D5612AQEdAWhwnkDvTg/article-cover_image-shrink_600_2000/0/1707400396489?e=2147483647&v=beta&t=zo1tWZBI26yDXmjivsRbjRBA2OHlYi7aKxKFp7dYvvc"
+                    alt="Innovation" class="img-fluid my-3 d-block mx-auto" style="max-width: 100%; min-width: 250px;">
+            </div>
+        </div>
+    </div>
+</section> --> 
+
+<!-- <style>
+    @media (max-width: 768px) {
+        #about .row {
+            text-align: center;
+        }
+        #about .col-md-6 {
+            padding-right: 0; /* Remove padding on smaller screens */
+            padding-left: 0;
+        }
+        #about img {
+            max-width: 80%; /* Reduce image size slightly for small screens */
+        }
+        #about ul li {
+            justify-content: center; /* Center checkboxes and text */
+        }
+    }
+   
+    
+    
+   
+</style> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body style="font-family: Arial, sans-serif; margin: 20px; background-color: #f8f9fa;">
+
+    <!-- About Us Section -->
+    
+
+    <section class="container content-section" style="margin-top: -50px;">
+        <h2 style="text-align: center; color: #333; font-weight: bold; margin-bottom: 10px;">About Us</h2>
+        <p class="lead" style="text-align: center; color: #777; font-size: 16px;">Aperiam dolorum et et wuia molestias qui eveniet numquam nihil porro incidunt dolores.</p>
+
+        <div class="row">
+            <div class="col-md-6 image-section">
+                <img src="https://static8.depositphotos.com/1309509/1035/i/450/depositphotos_10358393-Workplace-with-mobile-phone-paper-pen-and-clips-on-work-table..jpg" alt="Work Image" style="width: 100%; border-radius: 8px; margin-bottom: 20px;">
+            </div>
+            <div class="col-md-6">
+                <h4 style="margin-bottom: 15px;">Voluptatem dignissimos provident quasi corporis</h4>
+                <ul class="checklist" style="padding-left: 20px;">
+                    <li style="list-style: none; position: relative; padding-left: 30px; margin-bottom: 10px; font-size: 16px; line-height: 1.5; color: #555;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        <span style="position: absolute; left: 0; font-size: 18px; color: #28a745;">✔</span>
+                    </li>
+                    <li style="list-style: none; position: relative; padding-left: 30px; margin-bottom: 10px; font-size: 16px; line-height: 1.5; color: #555;">
+                        Duis aute irure dolor in reprehenderit in voluptate velit.
+                        <span style="position: absolute; left: 0; font-size: 18px; color: #28a745;">✔</span>
+                    </li>
+                    <li style="list-style: none; position: relative; padding-left: 30px; margin-bottom: 10px; font-size: 16px; line-height: 1.5; color: #555;">
+                        Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        <span style="position: absolute; left: 0; font-size: 18px; color: #28a745;">✔</span>
+                    </li>
+                </ul>
+                <p>Ullamco laboris nisi ut aliquip ex Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ipsa nemo eum, accusamus nostrum non fuga est voluptatibus et minus.ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore lorem20 eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <p>Ut fugiat et sunt quia veniam. Voluptate perferendis perspiciatis quod nisi et Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit repellendus accusamus nostrum, totam aspernatur ipsam quidem nam repudiandae! Iusto, nulla! Placeat debitis quia recusandae odit et consequatur voluptatem.</p>
+                <p>Dignissimos pariatur consectetur fugit voluptas ea Lorem ipsum dolor sit amet consectetur adipisicing elit. Non eum consequuntur cum suscipit quaerat facilis nisi dolores at ab itaque.Temporibus nihil enim deserunt sed ea. Provident sit expedita aut cupiditate nihil vitae quo officia vel.</p>
+            </div>
+            <div class="col-md-6 image-overlay" style="position: relative; display: inline-block;">
+                <img src="https://media.istockphoto.com/id/1394348691/photo/two-diverse-businesswomen-working-together-on-a-digital-tablet-and-laptop-in-an-office.jpg?s=612x612&w=0&k=20&c=f6su_CQgz_XQu9RjruT7xFzEBMTRmE1wj3UMxUTSbN4=" alt="Team Image" style="width: 100%; border-radius: 8px; margin-top: -150px;">
+                <span class="play-btn" style="position: absolute; top: 20%; left: 50%; transform: translate(-50%, -50%); font-size: 50px; color: #28a745; background-color: rgba(0, 0, 0, 0.5); padding: 15px; border-radius: 50%; cursor: pointer;">&#9654;</span>
+            </div>
+        </div>
+
+        
+        </div>
+        <style>
+            @media(min-width: 794px) and (max-width: 989px)
+            {
+               
+            }
+        </style>
+    </section>
+
+
+
+
+
+<!-- Stickers Section -->
+
+<!-- Stickers Section -->
+<section id="stickers" class="py-5">
+    <div class="container">
+        <div class="row text-center justify-content-center">
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-0"> <!-- Set margin-bottom to 0 -->
+                <img src="https://iconape.com/wp-content/png_logo_vector/belimo-logo.png" alt="Sticker 1" class="img-fluid" style="max-width: 50%; height: auto;">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-0"> <!-- Set margin-bottom to 0 -->
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQoU2O_URHV1E3DbvRw67R35yYBPoSdPKSqg&s" alt="Sticker 2" class="img-fluid" style="max-width: 50%; height: auto;">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-0"> <!-- Set margin-bottom to 0 -->
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0ZVpzNg4bv9ssGhdQDW2K0f_vdClI8rbMSg&s" alt="Sticker 3" class="img-fluid" style="max-width: 50%; height: auto;">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-0"> <!-- Set margin-bottom to 0 -->
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBFHz2mXMUpe0YVyUQyWJTA0WnWjdUmq28jA&s" alt="Sticker 4" class="img-fluid" style="max-width: 50%; height: auto;">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-0"> <!-- Set margin-bottom to 0 -->
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Trustly-logo.png/1200px-Trustly-logo.png" alt="Sticker 5" class="img-fluid" style="max-width: 50%; height: auto;">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-0"> <!-- Set margin-bottom to 0 -->
+                <img src="https://oscmarine.com/wp-content/uploads/2015/11/oldendorff.png" alt="Sticker 6" class="img-fluid" style="max-width: 50%; height: auto;">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="image-and-points" class="py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Left side with image -->
+            <div class="col-md-6">
+                <img src="data:image/png;base64,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"
+                    alt="Left Image" class="img-fluid d-block mx-auto" style="width: 100%; max-width: 500px; margin-top: -20px;">
+                <!-- Added d-block and mx-auto for centering on small screens -->
+            </div>
+            <!-- Right side with points -->
+            <div class="col-md-6">
+                <ul style="list-style-type: none; padding: 0;text-align: center;">
+                    <li style="margin-bottom: 20px;">
+                        <span style="font-weight: bold; color: green; font-size: 24px;">232</span>
+                        <span style="font-size: 18px; font-weight: bold;">First subpoint description goes here.</span>
+                        <hr style="border-top: 1px solid green; margin: 30px 0;">
+                    </li>
+                    <li style="margin-bottom: 20px;">
+                        <span style="font-weight: bold; color: green; font-size: 24px;">521</span>
+                        <span style="font-size: 18px; font-weight: bold;">Second subpoint description goes here.</span>
+                        <hr style="border-top: 1px solid green; margin: 30px 0;">
+                    </li>
+                    <li style="margin-bottom: 20px;">
+                        <span style="font-weight: bold; color: green; font-size: 24px;">453</span>
+                        <span style="font-size: 18px; font-weight: bold;">Third subpoint description goes here.</span>
+                        <hr style="border-top: 1px solid green; margin: 30px 0;">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section id="fullscreen-section"
+    style="position: relative; width: 95%; height: 75vh; overflow: hidden; text-align: center; border-radius: 15px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); margin: 50px auto; max-width: 1200px;">
+    
+    <!-- Background Image -->
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQueVQsRFwBZ9rxh1BOZKsZt0XyahqAoitgQg&s"
+        alt="Full Screen Background"
+        style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: -1; border-radius: 15px;">
+
+    <!-- Overlay -->
+    <div
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 0; border-radius: 15px;">
+    </div>
+
+    <!-- Content -->
+
+
+
+    <div
+        style="position: relative; z-index: 1; color: white; padding: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+
+        <!-- Play Icon -->
+        <img src="https://cdn-icons-png.flaticon.com/512/4340/4340129.png" alt="Play Icon"
+            style="width: 70px; height: 70px; margin-bottom: 20px; background-color: rgba(255,255,255,0.2); border-radius: 50%; padding: 10px;">
+
+        <!-- Call to Action Title -->
+        <div style="font-size: 35px; font-weight: bold; margin-top: 10px;">Call To Action</div>
+
+        <!-- Description -->
+        <p style="font-size: 16px; margin: 20px 0; max-width: 700px;">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+        <!-- Call to Action Button -->
+        <button
+    style="padding: 10px 30px; font-size: 16px; border: 2px solid white; border-radius: 30px; background-color: transparent; color: white; cursor: pointer; transition: background-color 0.3s;"
+    onmousedown="this.style.backgroundColor='rgba(255, 255, 255, 0.2)';"
+    onmouseup="this.style.backgroundColor='transparent';"
+    onmouseleave="this.style.backgroundColor='transparent';">
+    Call To Action
+</button>
+
+    </div>
+    
+</section>
+
+
+<!-- Responsive CSS Styles -->
+<style>
+    @media(min-width:300px)
+    {
+        .rain{
+            margin-left: 3rem;
+        }
+    }
+    @media (max-width: 1024px) {
+        #fullscreen-section {
+            height: 60vh;
+        }
+
+        #fullscreen-section div {
+            padding: 15px;
+        }
+
+        #fullscreen-section img {
+            width: 60px;
+            height: 60px;
+        }
+
+        #fullscreen-section button {
+            padding: 8px 25px;
+            font-size: 14px;
+        }
+
+        #fullscreen-section div p {
+            font-size: 14px;
+            max-width: 600px;
+        }
+
+        #fullscreen-section div div {
+            font-size: 30px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        #fullscreen-section {
+            height: 50vh;
+        }
+
+        #fullscreen-section img {
+            width: 50px;
+            height: 50px;
+        }
+
+        #fullscreen-section div div {
+            font-size: 25px;
+        }
+
+        #fullscreen-section div p {
+            font-size: 13px;
+            max-width: 500px;
+        }
+
+        #fullscreen-section button {
+            padding: 8px 20px;
+            font-size: 13px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        #fullscreen-section {
+            height: 45vh;
+        }
+
+        #fullscreen-section img {
+            width: 40px;
+            height: 40px;
+        }
+
+        #fullscreen-section div div {
+            font-size: 22px;
+        }
+
+        #fullscreen-section div p {
+            font-size: 12px;
+            max-width: 90%;
+        }
+
+        #fullscreen-section button {
+            padding: 6px 15px;
+            font-size: 12px;
+        }
+    }
+    /* @media(max-width: 1230px){
+        #fullscreen-section {
+        margin: 0 3rem !important;
+        }
+    } */
+
+     
+</style>
+
+
+
+
+<section id="services" class="py-5 bg-light" style="margin-top: -10px;">
+    <div class="container">
+        <h2 class="text-center">Our Services</h2>
+        <div style="width: 50px; height: 2px; background-color: rgba(40, 167, 69, 0.5); margin: 0 auto 20px;"></div>
+        <p class="text-center">What we offer to help you succeed.</p>
+
+        <!-- Row 1 -->
+        <div class="row justify-content-center">
+            <!-- Card 1 -->
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-3 d-flex justify-content-center">
+                <div class="card p-3 h-100" style="text-align: left; width: 100%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 10px;">
+                    <div style="text-align: left;">
+                        <i class="fa-solid fa-wave-square" style="font-size: 40px; margin-bottom: 10px;"></i>  
+                        <h4>Nesciunt Mete</h4>
+                        <h4 style="border-bottom: 2px solid rgba(128, 128, 128, 0.5); padding-bottom: 5px;width: 8rem;"></h4>   
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, illo? cupiditate ea. Itaque assumenda</p>
+                        <div style="margin-top: auto;">
+                            <a href="#" style="color: #126c27; display: inline-block; margin-top: 10px;">Read more →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-3 d-flex justify-content-center">
+                <div class="card p-3 h-100" style="text-align: left; width: 100%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 10px;">
+                    <div style="text-align: left;">
+                        <i class="fa-solid fa-wifi" style="font-size: 40px; margin-bottom: 10px;"></i>
+                        <h4>Eosle Commodi</h4>
+                        <h4 style="border-bottom: 2px solid rgba(128, 128, 128, 0.5); padding-bottom: 5px;width: 8rem;"></h4>   
+                        <p>Lorem ipsum dolor sit amet. Nam tenetur, eum ducimus dolorum officia cupiditate ea. Itaque assumenda</p>
+                        <div style="margin-top: auto;">
+                            <a href="#" style="color: #126c27; display: inline-block; margin-top: 10px;">Read more →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-3 d-flex justify-content-center">
+                <div class="card p-3 h-100" style="text-align: left; width: 100%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 10px;">
+                    <div style="text-align: left;">
+                        <i class="fa-solid fa-robot" style="font-size: 40px; margin-bottom: 10px;"></i>
+                        <h4>Ledo Markt</h4>
+                        <h4 style="border-bottom: 2px solid rgba(128, 128, 128, 0.5); padding-bottom: 5px;width: 8rem;"></h4>   
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sapiente a labore? Animi, quisquam dignissimos?</p>
+                        <div style="margin-top: auto;">
+                            <a href="#" style="color: #126c27; display: inline-block; margin-top: 10px;">Read more →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="row justify-content-center mt-3">
+            <!-- Card 4 -->
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-3 d-flex justify-content-center">
+                <div class="card p-3 h-100" style="text-align: left; width: 100%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 10px;">
+                    <div style="text-align: left;">
+                        <i class="fa-brands fa-squarespace" style="font-size: 40px; margin-bottom: 10px;"></i>
+                        <h4>Graphic Design</h4>
+                        <h4 style="border-bottom: 2px solid rgba(128, 128, 128, 0.5); padding-bottom: 5px;width: 8rem;"></h4>   
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat optio hic explicabo, sequi mollitia impedit.</p>
+                        <div style="margin-top: auto;">
+                            <a href="#" style="color: #126c27; display: inline-block; margin-top: 10px;">Read more →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-3 d-flex justify-content-center">
+                <div class="card p-3 h-100" style="text-align: left; width: 100%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 10px;">
+                    <div style="text-align: left;">
+                        <i class="fa-regular fa-calendar-days" style="font-size: 40px; margin-bottom: 10px;"></i>
+                        <h4>Content Writing</h4>
+                        <h4 style="border-bottom: 2px solid rgba(128, 128, 128, 0.5); padding-bottom: 5px;width: 8rem;"></h4>   
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente obcaecati officia, natus odio fuga dolore.</p>
+                        <div style="margin-top: auto;">
+                            <a href="#" style="color: #126c27; display: inline-block; margin-top: 10px;">Read more →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-3 d-flex justify-content-center">
+                <div class="card p-3 h-100" style="text-align: left; width: 100%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 10px;">
+                    <div style="text-align: left;">
+                        <i class="fa-solid fa-message" style="font-size: 40px; margin-bottom: 10px;"></i>
+                        <h4>Social Media Management</h4>
+                        <h4 style="border-bottom: 2px solid rgba(128, 128, 128, 0.5); padding-bottom: 5px;width: 8rem;"></h4>   
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, cum praesentium fugit quidem.</p>
+                        <div style="margin-top: auto;">
+                            <a href="#" style="color: #126c27; display: inline-block; margin-top: 10px;">Read more →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Add media queries for responsiveness -->
+<style>
+    
+    @media (max-width: 768px) {
+  .pricing-section-fluid h2,
+  .pricing-section-fluid p {
+      padding: 0 !important;
+  }
+}
+@media (max-width: 768px) {
+    .card {
+        width: 90%; /* Reduce card width */
+    }
+}
+
+@media (max-width: 766px) and (min-width: 584px) {
+    .col-md-4, .col-lg-3 {
+        flex: 0 0 48%; /* Two cards per row for medium screens */
+        max-width: 48%;
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        width: 100%; /* Full width on very small screens */
+        margin-bottom: 20px;
+    }
+
+    h4 {
+        font-size: 1.25rem; /* Reduce heading size */
+    }
+
+    p {
+        font-size: 0.9rem; /* Reduce paragraph font size */
+    }
+
+    i, img {
+        font-size: 30px;
+        width: 60px; /* Reduce icon and image size */
+    }
+}
+
+</style>
+
+<!-- Testimonials -->
+    <!-- Testimonials Section -->
+<section id="testimonials" style="padding: 60px 0;">
+    <div class="container">
+        
+        <h2 class="text-center mb-2">Testimonials</h2>
+        <div style="width: 50px; height: 2px; background-color: rgba(40, 167, 69, 0.5); margin: 0 auto 20px;"></div>
+        <p class="text-center mb-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, illo? cupiditate ea. Itaque assumenda</p>
+        <div class="row">
+            <!-- Testimonial 1 -->
+            <div class="col-md-4">
+                <div style="padding: 20px; background-color: #ffffff; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                    <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                        <!-- Image Section (Client Image on the left) -->
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5Fhhep4XlcW5EVuHs8Tov3FjtugtPBKtilCCalhuAuoPfPGYWPn1C2TzuZEEzTTwCfes&usqp=CAU" alt="Client Image" style="border-radius: 50%; width: 80px; height: 80px; object-fit: cover; margin-right: 15px;">
+                        <!-- Text Section (Name & Position on the right) -->
+                        <div style="text-align: left;">
+                            <h5 style="font-weight: bold; margin: 0;">Sara Wilsson</h5>
+                            <p style="font-style: italic; color: #555; margin: 0;">Designer</p>
+                            <p style="color: #ffc107; margin: 0;">★★★★☆</p>
+                        </div>
+                    </div>
+                    <!-- Stars and Content Section -->
+                    <p style="color: #555; text-align: center;">
+                        "Export tempor illum tamen malis malis eram quae labore. Quis fore sunt aliqua noster fugiat irure amet legam anim culpa Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut maxime quasi distinctio quia nemo. Odio voluptate tempore quasi repellendus possimus.."
+                    </p>
+                </div>
+            </div>
+            
+           <!-- Testimonial 2 -->
+<div class="col-md-4">
+    <div style="padding: 20px; background-color: #ffffff; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <div style="display: flex; align-items: center; margin-bottom: 15px;">
+            <!-- Image Section (Client Image on the left) -->
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6oC0cLNyFt4XMtPNe35Tct-8iicsxnDi--fghnv05pczTghd04zc3wR9ATttVVHswLX4&usqp=CAU" alt="Client Image" style="border-radius: 50%; width: 80px; height: 80px; object-fit: cover; margin-right: 15px;">
+            <!-- Text Section (Name & Position on the right) -->
+            <div style="text-align: left;">
+                <h5 style="font-weight: bold; margin: 0;">Jena Karlis</h5>
+                <p style="font-style: italic; color: #555; margin: 0;">Developer</p>
+                <p style="color: #ffc107; margin: 0;">★★★★☆</p>
+            </div>
+        </div>
+        <!-- Testimonial Content -->
+        <p style="color: #555; text-align: center;">
+            "Enim nisi quem export duis Lorem ipsum dolor sit amet quae abs irure and tri ghl esse jig labore adipisicing elit. Soluta illo possimus sunt.labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute."
+        </p>
+    </div>
+</div>
+
+            <!-- Testimonial 3 -->
+<div class="col-md-4">
+    <div style="padding: 20px; background-color: #ffffff; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <div style="display: flex; align-items: center; margin-bottom: 15px;">
+            <!-- Image Section (Client Image on the left) -->
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbvHpEOo3fTsZQkp5Hfd93YrByM9P4F944GylcXSwZ7xzop2YZo6KH7lFdu1FsdBJ3E8g&usqp=CAU" alt="Client Image" style="border-radius: 50%; width: 80px; height: 80px; object-fit: cover; margin-right: 15px;">
+            <!-- Text Section (Name & Position on the right) -->
+            <div style="text-align: left;">
+                <h5 style="font-weight: bold; margin: 0;">Matt Brandon</h5>
+                <p style="font-style: italic; color: #555; margin: 0;">Freelancer</p>
+                <p style="color: #ffc107; margin: 0;">★★★★☆</p>
+            </div>
+        </div>
+        <!-- Testimonial Content -->
+        <p style="color: #555; text-align: center;">
+            "Fugiat enim eram quae cillum dolore dolor amet nulla dolor sit hbd jiyd amet consectetur adipisicing elit. Vero ea accusantium nobis id magni esse inventore recusandae minima adipisci earum?Export minim fugiat minim velit minim dolor enim duis veniam ipsum."
+        </p>
+    </div>
+</div>
+
+    </div>
+</section>
+
+<!-- Portfolio -->
+<section id="portfolio" class="py-5 bg-light" style="padding: 50px 0; background-color: #f8f9fa;">
+    <div class="container">
+        <h2 class="text-center" style="font-weight: bold; margin-top: 30px;">Our Portfolio</h2>
+        <div style="width: 50px; height: 2px; background-color: rgba(40, 167, 69, 0.5); margin: 0 auto 20px;"></div>
+        <p class="text-center text-muted" style="color: #6c757d;">Browse through our latest work and creative
+            projects.</p>
+
+        <!-- Filter Buttons -->
+        <!-- Filter Text -->
+<!-- Filter Text -->
+<div class="text-center" style="margin-bottom: 20px;">
+    <span class="hover-effect" style="margin-right: 15px; cursor: pointer;">All</span>
+    <span class="hover-effect" style="margin-right: 15px; cursor: pointer;">App</span>
+    <span class="hover-effect" style="margin-right: 15px; cursor: pointer;">Product</span>
+    <span class="hover-effect" style="margin-right: 15px; cursor: pointer;">Branding</span>
+    <span class="hover-effect" style="margin-right: 15px; cursor: pointer;">Books</span>
+</div>
+
+<style>
+    .hover-effect {
+        transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and transform */
+    }
+
+    .hover-effect:hover {
+        color: green; /* Change the color on hover */
+        transform: scale(1.1); /* Slightly increase the size on hover */
+    }
+</style>
+
+
+
+
+
+   <!-- Portfolio Grid (12 items, 3 per row) -->
+
+   <div class="row mt-4">
+    <!-- Portfolio Item 1 -->
+    <div class="col-md-4 col-sm-6 mb-4">
+        <div class="portfolio-item card" style="transition: all 0.3s ease;  border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); text-align: center;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbdvHhE-6WTAqurxq4ekzzqet53c_iyRQVHg&s" alt="Portfolio 1" style="width: 100%; height: 200px; object-fit: cover;">
+            <h4 style="padding: 0 0.5rem;margin:0; font-size: 1.1em; font-weight: 600;text-align: left;">Portfolio 1</h4>
+            <p style="padding: 0.5rem;margin:0;font-size: 0.9em; color: #888;text-align: left;">Lorem ipsum, dolor sit amet consectetur</p>
+        </div>
+    </div>
+
+    <!-- Portfolio Item 2 -->
+    <div class="col-md-4 col-sm-6 mb-4">
+        <div class="portfolio-item card" style="transition: all 0.3s ease; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); text-align: center;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNsReqw88QKUuhN-ZdWsgSZcnVbpp2Yiid6A&s" alt="Portfolio 2" style="width: 100%; height: 200px; object-fit: cover;">
+            <h4 style="padding: 0 0.5rem;margin:0; font-size: 1.1em; font-weight: 600;text-align: left;">Portfolio 2</h4>
+            <p style="padding: 0.5rem;margin:0;font-size: 0.9em; color: #888;text-align: left;">Lorem ipsum, dolor sit amet consectetur</p>
+        </div>
+    </div>
+
+    <!-- Portfolio Item 3 -->
+    <div class="col-md-4 col-sm-6 mb-4">
+        <div class="portfolio-item card" style="transition: all 0.3s ease; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); text-align: center;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZzpDrevkCwiSKmH_-vs0nN85mn7sNuPxkXAs_QgOsSM76brM20KnBIhft1YFsiyzoUGs&usqp=CAU" alt="Portfolio 3" style="width: 100%; height: 200px; object-fit: cover;">
+            <h4 style="padding: 0 0.5rem;margin:0;font-size: 1.1em; font-weight: 600;text-align: left;">Portfolio 3</h4>
+            <p style="padding: 0.5rem;margin:0;font-size: 0.9em; color: #888;text-align: left;">Lorem ipsum, dolor sit amet consectetur</p>
+        </div>
+    </div>
+
+    <!-- Portfolio Item 4 -->
+    <div class="col-md-4 col-sm-6 mb-4">
+        <div class="portfolio-item card" style="transition: all 0.3s ease;  border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); text-align: center;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbdvHhE-6WTAqurxq4ekzzqet53c_iyRQVHg&s" alt="Portfolio 4" style="width: 100%; height: 200px; object-fit: cover;">
+            <h4 style="padding: 0 0.5rem;margin:0; font-size: 1.1em; font-weight: 600;text-align: left;">Portfolio 4</h4>
+            <p style="padding: 0.5rem;margin:0;font-size: 0.9em; color: #888;text-align: left;">Lorem ipsum, dolor sit amet consectetur</p>
+        </div>
+    </div>
+
+    <!-- Portfolio Item 5 -->
+    <div class="col-md-4 col-sm-6 mb-4">
+        <div class="portfolio-item card" style="transition: all 0.3s ease; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); text-align: center;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg7Tm6roT-4z-vy5__XbLQe5nh2Mu_qBq_4g&s" alt="Portfolio 5" style="width: 100%; height: 200px; object-fit: cover;">
+            <h4 style="padding: 0 0.5rem;margin:0; font-size: 1.1em; font-weight: 600;text-align: left;">Portfolio 5</h4>
+            <p style="padding: 0.5rem;margin:0;font-size: 0.9em; color: #888;text-align: left;">Lorem ipsum, dolor sit amet consectetur</p>
+        </div>
+    </div>
+
+    <!-- Portfolio Item 6 -->
+    <div class="col-md-4 col-sm-6 mb-4">
+        <div class="portfolio-item card" style="transition: all 0.3s ease;  border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); text-align: center;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu5iuX_S3cCdyM1PVnFYLdTLwdSaM8XNwFbw&s" alt="Portfolio 6" style="width: 100%; height: 200px; object-fit: cover;">
+            <h4 style="padding: 0 0.5rem;margin:0; font-size: 1.1em; font-weight: 600;text-align: left;">Portfolio 6</h4>
+            <p style="padding: 0.5rem;margin:0;font-size: 0.9em; color: #888;text-align: left;">Lorem ipsum, dolor sit amet consectetur</p>
+        </div>
+    </div>
+
+    <!-- Portfolio Item 7 -->
+    <div class="col-md-4 col-sm-6 mb-4">
+        <div class="portfolio-item card" style="transition: all 0.3s ease;  border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); text-align: center;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa9xUDFkp2QYQYzgaDCD0cplCUoMo04p2YnQ&s" alt="Portfolio 7" style="width: 100%; height: 200px; object-fit: cover; ">
+            <h4 style="padding: 0 0.5rem;margin:0; font-size: 1.1em; font-weight: 600;text-align: left;">Portfolio 7</h4>
+            <p style="padding: 0.5rem;margin:0;font-size: 0.9em; color: #888;text-align: left;">Lorem ipsum, dolor sit amet consectetur</p>
+        </div>
+    </div>
+
+    <!-- Portfolio Item 8 -->
+    <div class="col-md-4 col-sm-6 mb-4">
+        <div class="portfolio-item card" style="transition: all 0.3s ease; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); text-align: center;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrjOdLB85GEbjT8nsYM_szztN6WsGvEiw-SVW9Cdgn0c_A2u6_7JF5u3VGtHT0EKOPntI&usqp=CAU" alt="Portfolio 8" style="width: 100%; height: 200px; object-fit: cover; ">
+            <h4 style="padding: 0 0.5rem;margin:0; font-size: 1.1em; font-weight: 600;text-align: left;">Portfolio 8</h4>
+            <p style="padding: 0.5rem;margin:0;font-size: 0.9em; color: #888;text-align: left;">Lorem ipsum, dolor sit amet consectetur</p>
+        </div>
+    </div>
+
+    <!-- Portfolio Item 9 -->
+    <div class="col-md-4 col-sm-6 mb-4">
+        <div class="portfolio-item card" style="transition: all 0.3s ease; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); text-align: center;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfQdwf6YT6yhnRIb2uicqyLvnWAGhPD5sbVeoQnP8Q63frl-fAvzHUBnqy_EEN1ADsJUM&usqp=CAU" alt="Portfolio 9" style="width: 100%; height: 200px; object-fit: cover; ">
+            <h4 style="padding: 0 0.5rem;margin:0; font-size: 1.1em; font-weight: 600;text-align: left;">Portfolio 9</h4>
+            <p style="padding: 0.5rem;margin:0;font-size: 0.9em; color: #888;text-align: left;">Lorem ipsum, dolor sit amet consectetur</p>
+        </div>
+    </div>
+
+    <!-- Portfolio Item 10 -->
+    <div class="col-md-4 col-sm-6 mb-4">
+        <div class="portfolio-item card" style="transition: all 0.3s ease;  border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); text-align: center;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa7O295F1H8jT7rps5u7FPvhQksHLeuOGEu63FSSbv1gXT4VfBNImceDwHtSqUIjfCx-4&usqp=CAU" alt="Portfolio 10" style="width: 100%; height: 200px; object-fit: cover;">
+            <h4 style="padding: 0 0.5rem;margin:0; font-size: 1.1em; font-weight: 600;text-align: left;">Portfolio 10</h4>
+            <p style="padding: 0.5rem;margin:0;font-size: 0.9em; color: #888;text-align: left;">Lorem ipsum, dolor sit amet consectetur</p>
+        </div>
+    </div>
+
+    <!-- Portfolio Item 11 -->
+    <div class="col-md-4 col-sm-6 mb-4">
+        <div class="portfolio-item card" style="transition: all 0.3s ease;  border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); text-align: center;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmgX7UpZ2NzepIZMi5i9ERaoeMb-yYTvC_n32hYI7dLJ3zkk-T7JkzxJqEaJEDiXPF3Pg&usqp=CAU" alt="Portfolio 11" style="width: 100%; height: 200px; object-fit: cover; ">
+            <h4 style="padding: 0 0.5rem;margin:0; font-size: 1.1em; font-weight: 600;text-align: left;">Portfolio 11</h4>
+            <p style="padding: 0.5rem;margin:0;font-size: 0.9em; color: #888;text-align: left;">Lorem ipsum, dolor sit amet consectetur</p>
+        </div>
+    </div>
+
+    <!-- Portfolio Item 12 -->
+    <div class="col-md-4 col-sm-6 mb-4">
+        <div class="portfolio-item card" style="transition: all 0.3s ease;  border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); text-align: center;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTAadLhKRF-J1lywdzWq4zClG5rS3Qu_t3k9RptdtmkuI4LaAw37ak7CrF9byX4ErPnyg&usqp=CAU" alt="Portfolio 12" style="width: 100%; height: 200px; object-fit: cover; ">
+            <h4 style="padding: 0 0.5rem;margin:0; font-size: 1.1em; font-weight: 600;text-align: left;">Portfolio 12</h4>
+            <p style="padding: 0.5rem;margin:0;font-size: 0.9em; color: #888;text-align: left;">Lorem ipsum, dolor sit amet consectetur</p>
+        </div>
+    </div>
+</div>
+</section>
+
+<style>
+.portfolio-item {
+    text-align: center;
+    background-color: #fff;
+}
+
+.portfolio-item img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    /* border-radius: 10px; */
+}
+
+.portfolio-item h4 {
+    /* margin-top: 15px; */
+    font-size: 1.1em;
+    font-weight: 600;
+
+}
+
+.portfolio-item p {
+    font-size: 0.9em;
+    color: #888;
+}
+
+.row {
+    padding: 0 15px;
+}
+
+.portfolio-item:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+</style>
+
+
+
+    <!-- Our Team Section -->
+<section id="team" style="padding: 40px 0; background-color: #eaeaea;">
+    <div class="container">
+        <h2 class="text-center" style="font-size: 36px; font-weight: bold; margin-bottom: 30px;">Meet Our Team</h2>
+        <div style="width: 50px; height: 2px; background-color: rgba(40, 167, 69, 0.5); margin: 0 auto 20px;"></div>
+        <div class="row">
+
+            <!-- Team Member 1 -->
+            <div class="col-md-3 col-sm-6 team-member" style="margin-bottom: 30px;">
+                <div class="card" style="border: none; padding: 1rem; text-align: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                    <img src="https://media.istockphoto.com/id/1413766112/photo/successful-mature-businessman-looking-at-camera-with-confidence.jpg?s=612x612&w=0&k=20&c=NJSugBzNuZqb7DJ8ZgLfYKb3qPr2EJMvKZ21Sj5Sfq4=" class="card-img-top" alt="Team Member 1" style="height: 300px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-size: 18px; font-weight: bold;">Team Member 1</h5>
+                        <p class="card-text" style="font-size: 14px;font-weight: bold; color: #6c757d;">Position 1</p>
+                        <div style="display: flex; justify-content: center; gap: 15px; margin-top: 10px;">
+                            <a href="#" style="color: #000; text-decoration: none;">
+                                <i class="fab fa-twitter" style="font-size: 20px; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background-color: white; color: grey; border: 2px solid grey; border-radius: 50%; transition: background-color 0.3s, border-color 0.3s;"
+                                   onmouseover="this.style.backgroundColor='#e1f5fe'; this.style.borderColor='#2196f3';" 
+                                   onmouseout="this.style.backgroundColor='white'; this.style.borderColor='grey';"></i>
+                            </a>
+                            <a href="#" style="color: #000; text-decoration: none;">
+                                <i class="fab fa-facebook-f" style="font-size: 20px; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background-color: white; color: grey; border: 2px solid grey; border-radius: 50%; transition: background-color 0.3s, border-color 0.3s;"
+                                   onmouseover="this.style.backgroundColor='#e1f5fe'; this.style.borderColor='#3b5998';" 
+                                   onmouseout="this.style.backgroundColor='white'; this.style.borderColor='grey';"></i>
+                            </a>
+                            <a href="#" style="color: #000; text-decoration: none;">
+                                <i class="fab fa-instagram" style="font-size: 20px; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background-color: white; color: grey; border: 2px solid grey; border-radius: 50%; transition: background-color 0.3s, border-color 0.3s;"
+                                   onmouseover="this.style.backgroundColor='#e1f5fe'; this.style.borderColor='#c32aa3';" 
+                                   onmouseout="this.style.backgroundColor='white'; this.style.borderColor='grey';"></i>
+                            </a>
+                            <a href="#" style="color: #000; text-decoration: none;">
+                                <i class="fab fa-linkedin-in" style="font-size: 20px; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background-color: white; color: grey; border: 2px solid grey; border-radius: 50%; transition: background-color 0.3s, border-color 0.3s;"
+                                   onmouseover="this.style.backgroundColor='#e1f5fe'; this.style.borderColor='#0077b5';" 
+                                   onmouseout="this.style.backgroundColor='white'; this.style.borderColor='grey';"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Member 2 -->
+            <div class="col-md-3 col-sm-6 team-member" style="margin-bottom: 30px;">
+                <div class="card" style="border: none;padding: 1rem; text-align: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwauJG1LPYknvOB3in47WU6RSsUYD2IkJTKIxolEZdlzueO0AeY7h6eIqgX93hGGFm75c&usqp=CAU" class="card-img-top" alt="Team Member 2" style="height: 300px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-size: 18px; font-weight: bold;">Team Member 2</h5>
+                        <p class="card-text" style="font-size: 14px;font-weight: bold; color: #6c757d;">Position 2</p>
+                        <div style="display: flex; justify-content: center; gap: 15px; margin-top: 10px;">
+                            <a href="#" style="color: #000; text-decoration: none;">
+                                <i class="fab fa-twitter" style="font-size: 20px; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background-color: white; color: grey; border: 2px solid grey; border-radius: 50%; transition: background-color 0.3s, border-color 0.3s;"
+                                   onmouseover="this.style.backgroundColor='#e1f5fe'; this.style.borderColor='#2196f3';" 
+                                   onmouseout="this.style.backgroundColor='white'; this.style.borderColor='grey';"></i>
+                            </a>
+                            <a href="#" style="color: #000; text-decoration: none;">
+                                <i class="fab fa-facebook-f" style="font-size: 20px; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background-color: white; color: grey; border: 2px solid grey; border-radius: 50%; transition: background-color 0.3s, border-color 0.3s;"
+                                   onmouseover="this.style.backgroundColor='#e1f5fe'; this.style.borderColor='#3b5998';" 
+                                   onmouseout="this.style.backgroundColor='white'; this.style.borderColor='grey';"></i>
+                            </a>
+                            <a href="#" style="color: #000; text-decoration: none;">
+                                <i class="fab fa-instagram" style="font-size: 20px; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background-color: white; color: grey; border: 2px solid grey; border-radius: 50%; transition: background-color 0.3s, border-color 0.3s;"
+                                   onmouseover="this.style.backgroundColor='#e1f5fe'; this.style.borderColor='#c32aa3';" 
+                                   onmouseout="this.style.backgroundColor='white'; this.style.borderColor='grey';"></i>
+                            </a>
+                            <a href="#" style="color: #000; text-decoration: none;">
+                                <i class="fab fa-linkedin-in" style="font-size: 20px; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background-color: white; color: grey; border: 2px solid grey; border-radius: 50%; transition: background-color 0.3s, border-color 0.3s;"
+                                   onmouseover="this.style.backgroundColor='#e1f5fe'; this.style.borderColor='#0077b5';" 
+                                   onmouseout="this.style.backgroundColor='white'; this.style.borderColor='grey';"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Member 3 -->
+            <div class="col-md-3 col-sm-6 team-member" style="margin-bottom: 30px;">
+                <div class="card" style="border: none;padding: 1rem; text-align: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdTUjMKRP3FfGqupvKKniBVU58MZJ5dMOuRQCsYv71E04w2Ub4fIsGmnxn4hu9EPiHVsA&usqp=CAU" class="card-img-top" alt="Team Member 3" style="height: 300px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-size: 18px; font-weight: bold;">Team Member 3</h5>
+                        <p class="card-text" style="font-size: 14px; font-weight: bold;color: #6c757d;">Position 3</p>
+                        <div style="display: flex; justify-content: center; gap: 15px; margin-top: 10px;">
+                            <a href="#" style="color: #000; text-decoration: none;">
+                                <i class="fab fa-twitter" style="font-size: 20px; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background-color: white; color: grey; border: 2px solid grey; border-radius: 50%; transition: background-color 0.3s, border-color 0.3s;"
+                                   onmouseover="this.style.backgroundColor='#e1f5fe'; this.style.borderColor='#2196f3';" 
+                                   onmouseout="this.style.backgroundColor='white'; this.style.borderColor='grey';"></i>
+                            </a>
+                            <a href="#" style="color: #000; text-decoration: none;">
+                                <i class="fab fa-facebook-f" style="font-size: 20px; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background-color: white; color: grey; border: 2px solid grey; border-radius: 50%; transition: background-color 0.3s, border-color 0.3s;"
+                                   onmouseover="this.style.backgroundColor='#e1f5fe'; this.style.borderColor='#3b5998';" 
+                                   onmouseout="this.style.backgroundColor='white'; this.style.borderColor='grey';"></i>
+                            </a>
+                            <a href="#" style="color: #000; text-decoration: none;">
+                                <i class="fab fa-instagram" style="font-size: 20px; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background-color: white; color: grey; border: 2px solid grey; border-radius: 50%; transition: background-color 0.3s, border-color 0.3s;"
+                                   onmouseover="this.style.backgroundColor='#e1f5fe'; this.style.borderColor='#c32aa3';" 
+                                   onmouseout="this.style.backgroundColor='white'; this.style.borderColor='grey';"></i>
+                            </a>
+                            <a href="#" style="color: #000; text-decoration: none;">
+                                <i class="fab fa-linkedin-in" style="font-size: 20px; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background-color: white; color: grey; border: 2px solid grey; border-radius: 50%; transition: background-color 0.3s, border-color 0.3s;"
+                                   onmouseover="this.style.backgroundColor='#e1f5fe'; this.style.borderColor='#0077b5';" 
+                                   onmouseout="this.style.backgroundColor='white'; this.style.borderColor='grey';"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Member 4 -->
+            <div class="col-md-3 col-sm-6 team-member" style="margin-bottom: 30px;">
+                <div class="card" style="border: none;padding: 1rem; text-align: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1xj_ku56hkxtp60cR8gX1W4RNdSA0_l20fNB5AXhcBMVcuR4TyKs-r_Czd2K70vSKDew&usqp=CAU" class="card-img-top" alt="Team Member 4" style="height: 300px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-size: 18px; font-weight: bold;">Team Member 4</h5>
+                        <p class="card-text" style="font-size: 14px; font-weight: bold;color: #6c757d;">Position 4</p>
+                        <div style="display: flex; justify-content: center; gap: 15px; margin-top: 10px;">
+                            <a href="#" style="color: #000; text-decoration: none;">
+                                <i class="fab fa-twitter" style="font-size: 20px; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background-color: white; color: grey; border: 2px solid grey; border-radius: 50%; transition: background-color 0.3s, border-color 0.3s;"
+                                   onmouseover="this.style.backgroundColor='#e1f5fe'; this.style.borderColor='#2196f3';" 
+                                   onmouseout="this.style.backgroundColor='white'; this.style.borderColor='grey';"></i>
+                            </a>
+                            <a href="#" style="color: #000; text-decoration: none;">
+                                <i class="fab fa-facebook-f" style="font-size: 20px; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background-color: white; color: grey; border: 2px solid grey; border-radius: 50%; transition: background-color 0.3s, border-color 0.3s;"
+                                   onmouseover="this.style.backgroundColor='#e1f5fe'; this.style.borderColor='#3b5998';" 
+                                   onmouseout="this.style.backgroundColor='white'; this.style.borderColor='grey';"></i>
+                            </a>
+                            <a href="#" style="color: #000; text-decoration: none;">
+                                <i class="fab fa-instagram" style="font-size: 20px; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background-color: white; color: grey; border: 2px solid grey; border-radius: 50%; transition: background-color 0.3s, border-color 0.3s;"
+                                   onmouseover="this.style.backgroundColor='#e1f5fe'; this.style.borderColor='#c32aa3';" 
+                                   onmouseout="this.style.backgroundColor='white'; this.style.borderColor='grey';"></i>
+                            </a>
+                            <a href="#" style="color: #000; text-decoration: none;">
+                                <i class="fab fa-linkedin-in" style="font-size: 20px; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background-color: white; color: grey; border: 2px solid grey; border-radius: 50%; transition: background-color 0.3s, border-color 0.3s;"
+                                   onmouseover="this.style.backgroundColor='#e1f5fe'; this.style.borderColor='#0077b5';" 
+                                   onmouseout="this.style.backgroundColor='white'; this.style.borderColor='grey';"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Responsive Media Query -->
+<style>
+    @media (min-width: 769px) and (max-width: 991px) {
+        .team-member {
+            flex: 0 0 50%; /* Two members per row */
+            max-width: 50%;
+        }
+
+        .card-img-top {
+            height: 250px; /* Reduce image height for smaller screens */
+        }
+
+        .card-title {
+            font-size: 16px;
+        }
+
+        .card-text {
+            font-size: 12px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .team-member {
+            flex: 0 0 100%; /* Full width for each member on small screens */
+            max-width: 100%;
+        }
+    }
+</style>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing-section-fluid py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Pricing</h2>
+            <p class="text-center">
+                Aperiam dolor et et wula molestias qui eveniet numquam nihil porro incidunt dolores placeat sunt.
+            </p>
+            <div class="row text-center mt-5">
+                <!-- Free Plan -->
+                <style>
+                    .btn-custom {
+                        padding: 10px 30px;
+                        font-size: 16px;
+                        border: 2px solid #1D766E; /* Change this to your desired border color */
+                        border-radius: 30px;
+                        background-color: transparent;
+                        color: #1D766E; /* Change this to your desired text color */
+                        cursor: pointer;
+                        transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Smooth transition */
+                    }
+                
+                    .btn-custom:hover {
+                        background-color: rgba(29, 118, 110, 0.2); /* Highlight color on hover */
+                        color: #fff; /* Change text color on hover */
+                        transform: scale(1.05); /* Slightly increase size */
+                    }
+                
+                    .btn-custom:active {
+                        background-color: rgba(29, 118, 110, 0.4); /* Darker highlight color when clicked */
+                        color: #fff; /* Change text color on click */
+                    }
+                </style>
+                
+                <div class="col-md-4 mb-4 position-1">
+                    <div class="pricing-card free-plan">
+                        <h3>Free wala Plan</h3>
+                        <div class="circle"></div> <!-- Light green circle -->
+                        <p class="price">
+                            <span class="price-value">$0</span><span class="price-per-month"> /month</span>
+                        </p>
+                        <ul>
+                            <li><span class="check">&#10003;</span> Quam adipiscing vitae proin</li>
+                            <li><span class="check">&#10003;</span> Nec feugiat nisl pretium</li>
+                            <li><span class="check">&#10003;</span> Nulla at volutpat diam uteera.</li>
+                            <li class="inactive"><span class="cross">&#10008;</span> Pharetra massa massa ultricies</li>
+                            <li class="inactive"><span class="cross">&#10008;</span> Massa ultricies mi quis hendriet</li>
+                        </ul>
+                        <button class="btn-custom">Buy Now</button>
+                    </div>
+                </div>
+                
+    
+                <!-- Business Plan -->
+                <div class="col-md-4 mb-4 position-2 featured">
+                    <div class="pricing-card featured-plan">
+                        <h3>Business Plan</h3>
+                        <div class="circle"></div> <!-- Light green circle -->
+                        <p class="price">
+                            <span class="price-value">$29</span><span class="price-per-month"> /month</span>
+                        </p>
+                        <ul>
+                            <li><span class="check">&#10003;</span> Quam adipiscing vitae proin</li>
+                            <li><span class="check">&#10003;</span> Nec feugiat nisl pretium</li>
+                            <li><span class="check">&#10003;</span> Nulla at volutpat diam uteera</li>
+                            <li><span class="check">&#10003;</span> Pharetra massa massa ultricies</li>
+                            <li><span class="check">&#10003;</span> Massa ultricies mi quis hendrerit</li>
+                        </ul>
+                        <button class="btn-custom">Buy Now</button>
+                    </div>
+                </div>
+                
+                <!-- Developer Plan -->
+                <div class="col-md-4 mb-4 position-3">
+                    <div class="pricing-card developer-plan">
+                        <h3>Developer Plan</h3>
+                        <div class="circle"></div> <!-- Light green circle -->
+                        <p class="price">
+                            <span class="price-value">$49</span><span class="price-per-month"> /month</span>
+                        </p>
+                        <ul>
+                            <li><span class="check">&#10003;</span> Quam adipiscing vitae proin</li>
+                            <li><span class="check">&#10003;</span> Nec feugiat nisl pretium</li>
+                            <li><span class="check">&#10003;</span> Nulla at volutpat diam uteera</li>
+                            <li><span class="check">&#10003;</span> Pharetra massa massa ultricies</li>
+                            <li><span class="check">&#10003;</span> Massa ultricies mi quis hendrerit</li>
+                        </ul>
+                        <button class="btn-custom">Buy Now</button>
+                    </div>
+                </div>
+                <style>
+                    .btn-custom {
+                        padding: 10px 30px;
+                        font-size: 16px;
+                        border: 2px solid #1D766E; /* Change this to your desired border color */
+                        border-radius: 30px;
+                        background-color: transparent;
+                        color: #1D766E; /* Change this to your desired text color */
+                        cursor: pointer;
+                        transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Smooth transition */
+                    }
+                
+                    .btn-custom:hover {
+                        background-color: rgba(29, 118, 110, 0.2); /* Highlight color on hover */
+                        color: #fff; /* Change text color on hover */
+                        transform: scale(1.05); /* Slightly increase size */
+                    }
+                
+                    .btn-custom:active {
+                        background-color: rgba(29, 118, 110, 0.4); /* Darker highlight color when clicked */
+                        color: #fff; /* Change text color on click */
+                    }
+                </style>
+                                
+    
+        <style>
+            .pricing-section-fluid {
+                padding: 60px 0;
+                background-color: #f8f9fa;
+            }
+    
+            .pricing-section-fluid h2 {
+                text-align: center;
+                font-weight: bold;
+                margin-bottom: 40px;
+            }
+    
+            .pricing-section-fluid p {
+                text-align: center !important;
+                margin: 0 auto;
+                margin-bottom: 50px;
+                max-width: 600px;
+            }
+    
+            .pricing-card {
+                background-color: #fff;
+                padding: 40px;
+                border-radius: 10px;
+                box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease;
+                position: relative;
+            }
+    
+            .circle {
+                width: 60px;
+                height: 60px;
+                background-color: #b2e2b1;
+                border-radius: 50%;
+                margin: 20px auto;
+            }
+    
+            .price {
+                font-size: 24px;
+                font-weight: bold;
+                margin: 20px 0;
+            }
+    
+            .price-value {
+                color: red;
+                font-size: 36px;
+            }
+    
+            .price-per-month {
+                color: black;
+                font-weight: normal;
+            }
+    
+            .pricing-card ul {
+                padding: 0;
+                margin-bottom: 30px;
+                text-align: left;
+            }
+    
+            .pricing-card ul li {
+                margin-bottom: 10px;
+                list-style: none;
+            }
+    
+            .check {
+                color: green;
+                margin-right: 10px;
+            }
+    
+            .cross {
+                color: red;
+                margin-right: 10px;
+            }
+    
+            .inactive {
+                color: #ced4da;
+                text-decoration: line-through;
+            }
+    
+            .btn-custom {
+                background-color: white;
+                color: green;
+                border-radius: 50px;
+                padding: 10px 30px;
+                text-transform: uppercase;
+                font-weight: bold;
+                display: inline-block;
+                cursor: pointer;
+                border: none;
+            }
+    
+            .featured-plan {
+                border: 2px solid green;
+                position: relative;
+                background-color: #e9ecef;
+            }
+    
+            /* Media queries for responsive design */
+            @media (max-width: 783px) and (min-width: 585px) {
+                .col-md-4 {
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                }
+            }
+    
+            @media (max-width: 576px) {
+                .pricing-card {
+                    margin-bottom: 30px;
+                }
+    
+                .price-value {
+                    font-size: 30px;
+                }
+    
+                .btn-custom {
+                    padding: 8px 20px;
+                    font-size: 14px;
+                }
+            }
+            /* Add this to your existing CSS */
+@media (min-width: 783px) and (max-width: 991px) {
+    .row {
+        display: flex;
+        align-items: stretch; /* Makes all columns stretch to the same height */
+    }
+
+    .pricing-card {
+        flex: 1; /* Allows cards to grow and fill the row */
+        display: flex;
+        flex-direction: column; /* Ensures elements stack vertically */
+    }
+}
+
+        </style>
+    </section>
+    
+
+
+    <!-- FAQ -->
+    <section id="faq" style="padding: 40px 0;">
+        <div class="container" style="max-width: 900px; margin: 0 auto;">
+            <div class="row">
+                <!-- FAQ Title -->
+                <div class="col-md-6" style="padding-right: 30px;">
+                    <h2 style="font-size: 36px; font-weight: bold;">Frequently Asked <span style="color: #2b837b;">Questions</span></h2>
+                    <p style="font-size: 16px; color: #6c757d;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+    
+                <!-- FAQ Accordion -->
+                <div class="col-md-6">
+                    <div class="accordion" id="faqAccordion">
+                        <!-- FAQ Item 1 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"style="font-weight: bold; color: #2b837b";>
+                                    1. Non consectetur a erat nam at lectus urna duis?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt nunc lorem, euismod aliquet lectus porttitor eget.
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- FAQ Item 2 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"style="font-weight: bold; color: #2b837b";>
+                                    2. Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut orci id urna ultrices feugiat.
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- FAQ Item 3 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"style="font-weight: bold; color: #2b837b";>
+                                    3. Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut orci id urna ultrices feugiat.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FAQ Item 4 -->
+<div class="accordion-item" style="border: none; margin-bottom: 10px; background-color: rgba(255, 255, 255, 0.8); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); border-radius: 8px;">
+    <h2 class="accordion-header" id="headingFour">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"
+            style="font-weight: bold; color: #2b837b";>
+            4. Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi?
+        </button>
+    </h2>
+    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+        data-bs-parent="#faqAccordion">
+        <div class="accordion-body" style="color: #6c757d;">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut orci id urna
+            ultrices feugiat.
+        </div>
+    </div>
+</div>
+
+<!-- FAQ Item 5 -->
+<div class="accordion-item" style="border: none; margin-bottom: 10px; background-color: rgba(255, 255, 255, 0.8); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); border-radius: 8px;">
+    <h2 class="accordion-header" id="headingFive">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive"
+            style="font-weight: bold; color: #2b837b;">
+            5. Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi?
+        </button>
+    </h2>
+    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+        data-bs-parent="#faqAccordion">
+        <div class="accordion-body" style="color: #6c757d;">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut orci id urna
+            ultrices feugiat.
+        </div>
+    </div>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<!-- Recent Blog Posts -->
+<section id="blog" class="py-5 bg-light">
+    <div class="container text-center">
+        <h2>Recent Blog Posts</h2>
+        <p>Stay updated with the latest trends and insights from our blog</p> <!-- Line/Paragraph after the heading -->
+
+        <div class="row justify-content-center mt-4"> <!-- Center cards -->
+            <!-- Card 1 -->
+            <div class="col-md-4 col-sm-6 mb-4"> <!-- Use responsive column classes -->
+                <div class="card" style="width: 100%;"> <!-- Set width to 100% for better alignment -->
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4QTmPpXoeBoUaf1DfPORvGzH2mT7ghXIaiA&s" 
+                        class="card-img-top" alt="Blog Post 1">
+                    <div class="card-body">
+                        <h4 class="card-title">How to Improve Website's SEO</h4>
+
+                        <div style="display: flex; align-items: center; gap: 15px;">
+                            <!-- Shifted image to the left -->
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbvHpEOo3fTsZQkp5Hfd93YrByM9P4F944GylcXSwZ7xzop2YZo6KH7lFdu1FsdBJ3E8g&usqp=CAU" 
+                                 alt="Client Image" 
+                                 style="border-radius: 50%; width: 80px; height: 80px; object-fit: cover;">
+
+                            <!-- Centered text (name and DOB) -->
+                            <div style="text-align: center;">
+                                <h5 style="margin: 0; font-size: 15px;">Matt Brandon</h5>
+                                <p style="margin-top: 5px; font-size: 10px;">January 5, 1985</p> <!-- Added DOB here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card" style="width: 100%;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa-NEbrigmfjBzevxm8K7bC1tSuykWKtmgbw&s" 
+                        class="card-img-top" alt="Blog Post 2">
+                    <div class="card-body">
+                        <h4 class="card-title">Designing for Success Trends</h4>
+
+                        <div style="display: flex; align-items: center; gap: 15px;">
+                            <!-- Shifted image to the left -->
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5Fhhep4XlcW5EVuHs8Tov3FjtugtPBKtilCCalhuAuoPfPGYWPn1C2TzuZEEzTTwCfes&usqp=CAU" 
+                                 alt="Client Image" 
+                                 style="border-radius: 50%; width: 80px; height: 80px; object-fit: cover;">
+
+                            <!-- Centered text (name and DOB) -->
+                            <div style="text-align: center;">
+                                <h5 style="margin: 0; font-size: 15px;">Sara Teldon</h5>
+                                <p style="margin-top: 5px; font-size: 10px;">July 5, 1995</p> <!-- Added DOB here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card" style="width: 100%;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4QTmPpXoeBoUaf1DfPORvGzH2mT7ghXIaiA&s" 
+                        class="card-img-top" alt="Blog Post 3">
+                    <div class="card-body">
+                        <h4 class="card-title">The Future of Mobile and  Apps</h4>
+
+                        <div style="display: flex; align-items: center; gap: 15px;">
+                            <!-- Shifted image to the left -->
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6oC0cLNyFt4XMtPNe35Tct-8iicsxnDi--fghnv05pczTghd04zc3wR9ATttVVHswLX4&usqp=CAU" 
+                                 alt="Client Image" 
+                                 style="border-radius: 50%; width: 80px; height: 80px; object-fit: cover;">
+
+                            <!-- Centered text (name and DOB) -->
+                            <div style="text-align: center;">
+                                <h5 style="margin: 0; font-size: 15px;">Jena Karlis</h5>
+                                <p style="margin-top: 5px; font-size: 10px;">June 15, 1995</p> <!-- Added DOB here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Add media queries for responsive design -->
+<style>
+@media (max-width: 768px) {
+    .card {
+        width: 90%; /* Adjust card width for tablets */
+        margin: 0 auto;
+    }
+
+    img.card-img-top {
+        height: auto; /* Ensure the blog images resize properly */
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        width: 100%; /* Full width for mobile screens */
+        margin-bottom: 20px;
+    }
+
+    h4.card-title {
+        font-size: 1.2rem; /* Reduce title size for mobile */
+    }
+
+    h5 {
+        font-size: 13px; /* Adjust author name font size */
+    }
+
+
+    img.card-img-top {
+        height: auto; /* Ensure the blog images resize properly */
+    }
+
+    img[alt="Client Image"] {
+        width: 60px;
+        height: 60px; /* Reduce size of author images */
+    }
+}
+</style>
+
+        
+
+    <!-- Contact Section -->
+    <section id="contact" style="padding: 40px 0; background-color: #f8f9fa;" class="container-fluid">
+        <div class="container" style="width: 90%; margin: 0 auto;">
+            <h2 style="color: #2b837b; text-align: center; margin-bottom: 20px;">Contact Us</h2>
+            <p style="text-align: center; margin-bottom: 40px;">Get in touch with us to start your project today!</p>
+    
+            <div class="contact-container" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: space-between;">
+                <!-- Contact Info - Large Box containing 4 smaller boxes -->
+                <div class="contact-info" style="flex: 1; background-color: #2ca491; padding: 30px; border-radius: 10px; color: white; max-width: 30%;">
+                    <div style="display: flex; flex-direction: column; gap: 20px;">
+                        <div style="background-color: #43ac9d; color: whitesmoke; padding: 20px; border-radius: 10px;">
+                            <h4 style="font-size: 18px; margin-bottom: 10px;">
+                                <span style="display: inline-block; width: 30px; height: 30px; background-color: white; border-radius: 50%; text-align: center; line-height: 30px; margin-right: 10px;">
+                                    <i class="fas fa-map-marker-alt" style="color: #2ca491;"></i>
+                                </span>
+                                Location:
+                            </h4>
+                            <p>A108 Adam Street, New York, NY 535022</p>
+                        </div>
+                        <div style="background-color: #43ac9d; color: whitesmoke; padding: 20px; border-radius: 10px;">
+                            <h4 style="font-size: 18px; margin-bottom: 10px;">
+                                <span style="display: inline-block; width: 30px; height: 30px; background-color: white; border-radius: 50%; text-align: center; line-height: 30px; margin-right: 10px;">
+                                    <i class="fas fa-envelope" style="color: #2ca491;"></i>
+                                </span>
+                                Email:
+                            </h4>
+                            <p>info@example.com</p>
+                        </div>
+                        <div style="background-color: #43ac9d; color: whitesmoke; padding: 20px; border-radius: 10px;">
+                            <h4 style="font-size: 18px; margin-bottom: 10px;">
+                                <span style="display: inline-block; width: 30px; height: 30px; background-color: white; border-radius: 50%; text-align: center; line-height: 30px; margin-right: 10px;">
+                                    <i class="fas fa-phone-alt" style="color: #2ca491;"></i>
+                                </span>
+                                Call:
+                            </h4>
+                            <p>+1 5589 55488 55</p>
+                        </div>
+                        <div style="background-color: #43ac9d; color: whitesmoke; padding: 20px; border-radius: 10px;">
+                            <h4 style="font-size: 18px; margin-bottom: 10px;">
+                                <span style="display: inline-block; width: 30px; height: 30px; background-color: white; border-radius: 50%; text-align: center; line-height: 30px; margin-right: 10px;">
+                                    <i class="fas fa-clock" style="color: #2ca491;"></i>
+                                </span>
+                                Open Hours:
+                            </h4>
+                            <p>Mon-Sat: 11AM - 23PM</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Contact Form -->
+                <div class="contact-form" style="flex: 1; background-color: white; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); max-width: 65%;">
+                    <form>
+                        <input type="text" style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 5px;" placeholder="Your Name" required>
+                        <input type="email" style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 5px;" placeholder="Your Email" required>
+                        <input type="text" style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 5px;" placeholder="Subject" required>
+                        <textarea style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;" rows="5" placeholder="Message" required></textarea>
+                        <button type="submit" 
+                            style="display: block; width: 50%; padding: 10px; background-color: #2b837b; color: white; border: none; border-radius: 50px; cursor: pointer; margin: 20px auto 0; transition: background-color 0.3s, transform 0.3s;"
+                            onmouseover="this.style.backgroundColor='rgba(43, 131, 123, 0.8)'; this.style.transform='scale(1.05)';" 
+                            onmouseout="this.style.backgroundColor='#2b837b'; this.style.transform='scale(1)';" 
+                            onmousedown="this.style.backgroundColor='rgba(43, 131, 123, 1)'; this.style.transform='scale(0.95)';" 
+                            onmouseup="this.style.backgroundColor='rgba(43, 131, 123, 0.8)'; this.style.transform='scale(1.05)';">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Add responsive styles here -->
+    <style>
+        /* Responsive styling */
+        @media (max-width: 768px) {
+            /* Stack the Contact Info and Contact Form vertically on smaller screens */
+            .contact-container {
+                flex-direction: column;
+                align-items: center;
+            }
+    
+            /* Set full width for both sections on smaller screens */
+            .contact-info, .contact-form {
+                max-width: 100%;
+                padding: 20px;
+            }
+    
+            /* Reduce the width of the button on smaller screens */
+            .contact-form button {
+                width: 100%;
+            }
+        }
+    
+        /* For screens between 350px and 762px */
+        @media (min-width: 350px) and (max-width: 762px) {
+            .container {
+                width: 95% !important;  /* Added !important for testing */
+            }
+    
+            .contact-info, .contact-form {
+                max-width: 100% !important;  /* Added !important for testing */
+            }
+    
+            .contact-info {
+                padding: 25px !important;  /* Added !important for testing */
+            }
+    
+            .contact-form {
+                padding: 25px !important;  /* Added !important for testing */
+            }
+    
+            .contact-form button {
+                width: 100% !important;  /* Added !important for testing */
+            }
+        }
+    
+        @media (max-width: 480px) {
+            /* Further reduce padding for mobile screens */
+            .contact-info, .contact-form {
+                padding: 15px;
+            }
+    
+            /* Stack the input fields closer on mobile devices */
+            .contact-form input, .contact-form textarea {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+    
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+
+    <!-- Full-Width Footer -->
+    <footer style="background-color: #2ca491; color: white; padding: 40px 0; font-family: Arial, sans-serif; width: 100%; position: relative; left: 0; right: 0;">
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; padding: 0 20px; width: 100%;">
+            
+            <!-- About Section -->
+            <div class="footer-section" style="flex: 1; min-width: 250px; margin-bottom: 20px; text-align: left;">
+                <p style="line-height: 1.8;">
+                    Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.
+                </p>
+                <div>
+                    <a href="#" class="social-icon" 
+                       style="font-size: 24px; color: white; transition: color 0.3s;" 
+                       onmouseover="this.style.color='#1DA1F2';" 
+                       onmouseout="this.style.color='#000';">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon" 
+                       style="font-size: 24px; color: white; transition: color 0.3s;" 
+                       onmouseover="this.style.color='#3b5998';" 
+                       onmouseout="this.style.color='#000';">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-icon" 
+                       style="font-size: 24px; color: white; transition: color 0.3s;" 
+                       onmouseover="this.style.color='#E4405F';" 
+                       onmouseout="this.style.color='#000';">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-icon" 
+                       style="font-size: 24px; color: white; transition: color 0.3s;" 
+                       onmouseover="this.style.color='#0077B5';" 
+                       onmouseout="this.style.color='#000';">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Useful Links -->
+            <div class="footer-section" style="flex: 1; min-width: 250px; margin-bottom: 20px; text-align: left;">
+                <h4>Useful Links</h4>
+                <ul style="list-style-type: none; padding: 0;">
+                    <li style="margin-bottom: 10px;"><a href="#" style="color: white; text-decoration: none;">Home</a></li>
+                    <li style="margin-bottom: 10px;"><a href="#" style="color: white; text-decoration: none;">About us</a></li>
+                    <li style="margin-bottom: 10px;"><a href="#" style="color: white; text-decoration: none;">Services</a></li>
+                    <li style="margin-bottom: 10px;"><a href="#" style="color: white; text-decoration: none;">Terms of service</a></li>
+                    <li style="margin-bottom: 10px;"><a href="#" style="color: white; text-decoration: none;">Privacy policy</a></li>
+                </ul>
+            </div>
+            
+            <!-- Our Services -->
+            <div class="footer-section" style="flex: 1; min-width: 250px; margin-bottom: 20px; text-align: left;">
+                <h4>Our Services</h4>
+                <ul style="list-style-type: none; padding: 0;">
+                    <li style="margin-bottom: 10px;"><a href="#" style="color: white; text-decoration: none;">Web Design</a></li>
+                    <li style="margin-bottom: 10px;"><a href="#" style="color: white; text-decoration: none;">Web Development</a></li>
+                    <li style="margin-bottom: 10px;"><a href="#" style="color: white; text-decoration: none;">Product Management</a></li>
+                    <li style="margin-bottom: 10px;"><a href="#" style="color: white; text-decoration: none;">Marketing</a></li>
+                    <li style="margin-bottom: 10px;"><a href="#" style="color: white; text-decoration: none;">Graphic Design</a></li>
+                </ul>
+            </div>
+            
+            <!-- Contact Section -->
+            <div class="footer-section" style="flex: 1; min-width: 250px; margin-bottom: 20px; text-align: left;">
+                <h4>Contact Us</h4>
+                <p style="line-height: 1.6;">
+                    A108 Adam Street<br>
+                    New York, NY 535022<br>
+                    United States
+                </p>
+                <p style="line-height: 1.6;">
+                    <strong>Phone:</strong> +1 5589 55488 55<br>
+                    <strong>Email:</strong> info@example.com
+                </p>
+            </div>
+            
+        </div>
+    </footer>
+    
+    <!-- Social Icon Style & Responsiveness -->
+    <style>
+        .social-icon {
+            color: white;
+            font-size: 20px;
+            margin-right: 15px;
+            text-decoration: none;
+            border: 2px solid white;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            background-color: transparent;
+        }
+    
+        footer {
+            margin: 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    
+        .footer-section {
+            flex: 1;
+            min-width: 250px;
+            max-width: 23%;
+            margin-bottom: 20px;
+        }
+    
+        /* Media Query for tablets */
+        @media (max-width: 991px) {
+            .footer-section {
+                max-width: 45%; /* Allows two columns layout on medium screens */
+                margin-left: 20px;
+            }
+        }
+    
+        /* Media Query for mobile screens */
+        @media (max-width: 768px) {
+            .footer-section {
+                max-width: 100%; /* Stacks all columns on small screens */
+                text-align: center;
+                margin-left: 0;
+            }
+    
+            footer div {
+                padding: 0 10px; /* Add padding to prevent content from touching screen edges */
+            }
+        }
+    </style>
+    
+    
+    <!-- jQuery (Optional) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+
+
+</body>
+
+</html>
